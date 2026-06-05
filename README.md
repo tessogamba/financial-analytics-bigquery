@@ -1,6 +1,6 @@
 # Financial Analytics: BigQuery & Looker Studio
 
-An end-to-end financial data analysis project created with **BigQuery**, **Looker Studio**, and **SQL**, demonstrating staging layers, raw SQL transformations, data quality testing, and dashboard visualisation across 12 public companies from 2009 to 2023.
+An end-to-end financial data analytics engineering project created with **BigQuery**, **Looker Studio**, and **SQL**, demonstrating staging layers, raw SQL transformations, data quality testing, and dashboard visualisation across 12 public companies from 2009 to 2023.
 
 ---
 
