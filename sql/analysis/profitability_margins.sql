@@ -16,7 +16,7 @@ select
        gross_profit,
        gross_profit / revenue * 100 as gross_profit_margin,
        net_income,
-       net_income / revenue * 100 as net_profit_margin,
+       net_profit_margin,
        ebitda,
        ebitda / revenue * 100 as ebitda_margin
 from `financial_statements.stg_financials`
