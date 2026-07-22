@@ -1,16 +1,16 @@
 # Financial Analytics BigQuery
-An end-to-end analytics engineering project created with **BigQuery**, **Looker Studio**, and **SQL**, demonstrating staging layers, raw SQL transformations, and data quality testing across 12 public companies from 2009 to 2023.
+An end-to-end analytics engineering project created with **BigQuery**, **Data Studio (formerly Looker Studio)**, and **SQL**, demonstrating staging layers, raw SQL transformations, and data quality testing across 12 public companies from 2009 to 2023.
 
 <img width="2548" height="1316" alt="Screenshot 2026-06-05 at 18 28 29" src="https://github.com/user-attachments/assets/c15e8076-fb0b-4748-b915-0d8c5121cd37" />
 
 ## Live Dashboard
 
-[View Dashboard on Looker Studio](https://datastudio.google.com/s/iOk5aX6aaVQ)
+[View Dashboard on Data Studio](https://datastudio.google.com/s/iOk5aX6aaVQ)
 
 ## Tech Stack
 
 - **Google BigQuery**: cloud data warehouse and SQL transformation layer
-- **Looker Studio**: dashboard and visualisation layer
+- **Data Studio (formerly Looker Studio)**: dashboard and visualisation layer
 - **SQL**: all transformation and analysis logic
 - **GitHub**: version control
 
@@ -111,12 +111,10 @@ All 7 tests passing.
 
 ## Related Projects
 
-- [financial-analytics-looker](https://github.com/tessogamba/financial-analytics-looker) — Looker Studio dashboard created on top of this pipeline
-- [retail-analytics-dbt](https://github.com/tessogamba/retail-analytics-dbt) — Analytics engineering pipeline created with dbt and Snowflake
-- [retail-analytics-tableau](https://github.com/tessogamba/retail-analytics-tableau) — Tableau dashboard created on top of the dbt pipeline
+- [case-management-analytics-pipeline-power-bi](https://github.com/tessogamba/case-management-analytics-pipeline-power-bi) - Production analytics pipeline built on a live SQL Server case management database with Power Query, dimensional modelling and DAX
+- [financial-analytics-looker](https://github.com/tessogamba/financial-analytics-looker) - Data Studio (formerly Looker Studio) dashboard created on top of this pipeline
+- [retail-analytics-dbt](https://github.com/tessogamba/retail-analytics-dbt) - Analytics engineering pipeline created with dbt and Snowflake
+- [retail-analytics-tableau](https://github.com/tessogamba/retail-analytics-tableau) - Tableau dashboard created on top of the dbt pipeline
 
-## Author
-
-**Teresia Ogamba (Tess Ogamba)** — Analytics Engineer & Data Analyst
-
-[LinkedIn](https://linkedin.com/in/tessogamba) | [Website](https://tessogamba.com) | [GitHub](https://github.com/tessogamba)
+---
+*Built by Tess Ogamba · [github.com/tessogamba](https://github.com/tessogamba) · [LinkedIn](https://linkedin.com/in/tessogamba)*
