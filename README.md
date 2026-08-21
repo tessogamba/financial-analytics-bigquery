@@ -1,5 +1,6 @@
-# Financial Analytics BigQuery
-An end-to-end analytics engineering project created with **BigQuery**, **Data Studio (formerly Looker Studio)**, and **SQL**, demonstrating staging layers, raw SQL transformations, and data quality testing across 12 public companies from 2009 to 2023.
+# Financial Analytics: BigQuery & SQL
+
+A financial analytics project using **Google BigQuery** and **SQL** to create reusable staging and analysis models across 12 public companies, six sectors and 23 financial metrics from 2009 to 2023.
 
 <img width="2548" height="1316" alt="Screenshot 2026-06-05 at 18 28 29" src="https://github.com/user-attachments/assets/c15e8076-fb0b-4748-b915-0d8c5121cd37" />
 
@@ -10,7 +11,7 @@ An end-to-end analytics engineering project created with **BigQuery**, **Data St
 ## Tech Stack
 
 - **Google BigQuery**: cloud data warehouse and SQL transformation layer
-- **Data Studio (formerly Looker Studio)**: dashboard and visualisation layer
+- **Looker Studio**: dashboard and visualisation layer
 - **SQL**: all transformation and analysis logic
 - **GitHub**: version control
 
@@ -68,13 +69,16 @@ The raw table loaded from CSV had inconsistent column names, spaces, brackets, a
 
 `sql/analysis/`
 
-Five analysis queries answering investor-facing business questions:
+Six analysis queries answering investor-facing business questions:
 
 **company_revenue_growth.sql**
 Calculates absolute revenue growth per company by comparing the first and last year's revenue. Uses CTEs and self-joins to retrieve bookend values. Ordered by highest growth.
 
 **profitability_margins.sql**
 Calculates gross profit margin, net profit margin, and EBITDA margin as percentages for every company across every year. Enables cross-company profitability comparison regardless of company size.
+
+**avg_profitability_margins.sql**
+Calculates each company's average net profit margin across all available years, supporting consistent cross-company profitability comparison.
 
 **yoy_growth.sql**
 Calculates year-on-year revenue growth percentage using the `LAG` window function with `PARTITION BY company ORDER BY year`. Returns null for each company's first year where no prior year exists.
@@ -111,10 +115,10 @@ All 7 tests passing.
 
 ## Related Projects
 
-- [case-management-analytics-pipeline-power-bi](https://github.com/tessogamba/case-management-analytics-pipeline-power-bi) - Production analytics pipeline built on a live SQL Server case management database with Power Query, dimensional modelling and DAX
-- [financial-analytics-looker](https://github.com/tessogamba/financial-analytics-looker) - Data Studio (formerly Looker Studio) dashboard created on top of this pipeline
-- [retail-analytics-dbt](https://github.com/tessogamba/retail-analytics-dbt) - Analytics engineering pipeline created with dbt and Snowflake
-- [retail-analytics-tableau](https://github.com/tessogamba/retail-analytics-tableau) - Tableau dashboard created on top of the dbt pipeline
+- [case-management-analytics-pipeline-power-bi](https://github.com/tessogamba/case-management-analytics-pipeline-power-bi) - Production SQL Server-to-Power BI reporting pipeline with dimensional modelling, DAX and governed data-quality controls
+- [financial-analytics-looker-studio](https://github.com/tessogamba/financial-analytics-looker-studio) - Looker Studio dashboard created from these BigQuery analysis models
+- [retail-analytics-dbt](https://github.com/tessogamba/retail-analytics-dbt) - Retail analytics project using dbt and Snowflake to create tested dimensional models
+- [retail-analytics-tableau](https://github.com/tessogamba/retail-analytics-tableau) - Tableau dashboard for customer, sales and revenue analysis
 
 ---
 *Built by Tess Ogamba · [github.com/tessogamba](https://github.com/tessogamba) · [LinkedIn](https://linkedin.com/in/tessogamba)*
