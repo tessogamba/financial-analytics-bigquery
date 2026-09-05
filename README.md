@@ -1,6 +1,5 @@
-# Financial Analytics: BigQuery & SQL
-
-A financial analytics project using **Google BigQuery** and **SQL** to create reusable staging and analysis models across 12 public companies, six sectors and 23 financial metrics from 2009 to 2023.
+# Financial Analytics Platform (BigQuery & SQL)
+An enterprise-aligned financial intelligence repository using Google BigQuery and raw SQL to orchestrate reusable analytical models, advanced macro-financial risk frameworks, and programmatic data-quality constraints.
 
 <img width="2548" height="1316" alt="Screenshot 2026-06-05 at 18 28 29" src="https://github.com/user-attachments/assets/c15e8076-fb0b-4748-b915-0d8c5121cd37" />
 
@@ -115,7 +114,7 @@ All 7 tests passing.
 
 ## Related Projects
 
-- [case-management-analytics-pipeline-power-bi](https://github.com/tessogamba/case-management-analytics-pipeline-power-bi) - Production SQL Server-to-Power BI reporting pipeline with dimensional modelling, DAX and governed data-quality controls
+- [case-management-analytics-platform](https://github.com/tessogamba/case-management-analytics-platform) - Production SQL Server-to-Power BI analytics platform with dimensional modelling, DAX and governed data-quality controls
 - [financial-analytics-looker-studio](https://github.com/tessogamba/financial-analytics-looker-studio) - Looker Studio dashboard created from these BigQuery analysis models
 - [retail-analytics-dbt](https://github.com/tessogamba/retail-analytics-dbt) - Retail analytics project using dbt and Snowflake to create tested dimensional models
 - [retail-analytics-tableau](https://github.com/tessogamba/retail-analytics-tableau) - Tableau dashboard for customer, sales and revenue analysis
